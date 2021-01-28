@@ -6,7 +6,7 @@ import styles from "./hero.module.css";
 
 export default ({ data }) => {
 
-  const a = useStaticQuery(graphql`query {
+  const a = useStaticQuery(graphql`query{
     contentfulBlogPost(
       id: { eq: "32be9310-0e65-5422-9f7f-57e8ec5a8afe" }
     ) {
@@ -16,7 +16,7 @@ export default ({ data }) => {
   }`);
   return (
     <div className={styles.hero}>
-      <StaticQuery
+      {/* <StaticQuery
         query={graphql`
           query {
             contentfulBlogPost(
@@ -30,7 +30,7 @@ export default ({ data }) => {
         render={(data) => {
           return <pre>{JSON.stringify(data)}</pre>;
         }}
-      />
+      /> */}
       <Img
         className={styles.heroImage}
         alt={data.name}
