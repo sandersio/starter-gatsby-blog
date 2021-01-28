@@ -38,7 +38,7 @@ module.exports = {
   siteMetadata: {
     title: "Gatsby Contentful starter",
   },
-  pathPrefix: "/gatsby-contentful-starter",
+  pathPrefix: "/nginx",
   plugins: [
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
